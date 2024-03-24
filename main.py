@@ -10,9 +10,5 @@ if question:
     chain = get_db_chain()
     response = chain.run(agent_prompt)
 
-    st.header("SQL query")
-    st.write(response)
-
     st.header("JSON Output")
-    
-    st.json(st.write(response))
+    st.write(response)
